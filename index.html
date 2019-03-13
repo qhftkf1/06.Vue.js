@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index  vue</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{dest('Hello!')}}</h1>
+      <a v-bind:href="website">go!</a>
+      <input type="text" v-bind:value="name">
+      <p v-html="goto"></p>
+    </div>
+    <script src= "app.js">    </script>
+  </body>
+</html>
