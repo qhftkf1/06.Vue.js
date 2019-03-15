@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>09. Computed property</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Computed Property</h1>
+      <p>age : {{age}}</p>
+
+
+      <button type="button" v-on:click="a++">Add a</button>
+      <button type="button" v-on:click="b++">Add b</button>
+
+      <p>a : {{a}}</p>
+      <p>b : {{b}}</p>
+      <p>age + a = {{AddAgeA}}</p>
+      <p>age + b = {{AddAgeB}}</p>
+    </div>
+
+    <script src="app.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>11.Conditionals </title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Conditionals</h1>
+      <h2>Example 1</h1>
+      <button v-on:click="success = !success">Success!</button>
+      <button v-on:click="error = !error">error!</button>
+      <!-- v-if 와 v-show의 차이점?
+          v-show는 display가 none으로 바뀐다. (CSS 변형)
+      -->
+      <!-- <p v-if="error">Wow, error!</p>
+      <p v-else-if="success">Oh, you take success!</p> -->
+      <p v-show="error">Wow, error!</p>
+      <p v-show="success">Oh, you take a success:D</p>
+
+    </div>
+
+    <script src="app.js"> </script>
+  </body>
+</html>

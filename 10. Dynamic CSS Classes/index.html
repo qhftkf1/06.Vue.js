@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>10. Dynamic Classes </title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>Dynamic CSS</h1>
+      <h2>Example 1</h1>
+        <!-- <div v-on:click="available = ! available" v-bind:class="{available : available}">
+            <span>Song</span>
+        </div> -->
+      <h2>Example 2</h2>
+      <button v-on:click="nearby = !nearby">Tab on nearby</button>
+      <button v-on:click="available = !available">Tab on available</button>
+      <div v-bind:class="compClasses">
+        <span>Song</span>
+      </div>
+    </div>
+
+    <script src="app.js"> </script>
+  </body>
+</html>
