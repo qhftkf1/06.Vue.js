@@ -1,7 +1,7 @@
 
 
-Vue.component('greeting'){
-  template:'<p>Hey there, I am {{name}}. <button v-on:click='
+Vue.component('greeting',{
+  template:'<p>Hey there, I am {{name}}. <button v-on:click="changeName">Change name</button></p>',
   data:function(){
     return{
       name:'Yoshi'
@@ -20,4 +20,4 @@ new Vue({
 
 new Vue({
   el:'#vue-app-two'
-})
+});
